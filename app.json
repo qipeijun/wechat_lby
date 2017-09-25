@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/destination/destination",
+    "pages/custom-tailor/custom-tailor"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#28c263",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color":"#666666",
+    "selectedColor":"#28c263",
+    "backgroundColor":"#ffffff",
+    "borderStyle":"#d9d9d9",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath":"/image/tabBar/btn-sy@3x.png",
+        "selectedIconPath":"/image/tabBar/btn-sy-s@3x.png"
+      },
+      {
+        "pagePath": "pages/destination/destination",
+        "text": "目的地",
+        "iconPath": "/image/tabBar/btn-mdd@3x.png",
+        "selectedIconPath": "/image/tabBar/btn-mdd-s@3x.png"
+      },
+      {
+        "pagePath": "pages/custom-tailor/custom-tailor",
+        "text": "定制游",
+        "iconPath": "/image/tabBar/btn-dzy@3x.png",
+        "selectedIconPath": "/image/tabBar/btn-dzy-s@3x.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "/image/tabBar/btn-wd@3x.png",
+        "selectedIconPath": "/image/tabBar/btn-wd-s@3x.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

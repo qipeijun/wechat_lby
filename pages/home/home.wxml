@@ -1,0 +1,95 @@
+<!--pages/home/home.wxml-->
+<!--head  -->
+<view class='head-wrap'>
+
+  <view class='search-wrap'>
+    <view class='location-wrap'>
+      <text>全部</text>
+    </view>
+    <view class='input-wrap'>
+      <view class='icon-img'>
+        <image src='/image/icon/btn_ss@3x_1.png'></image>
+      </view>
+      <input placeholder='目的地/产品名称/线路编号'></input>
+    </view>
+  </view>
+
+  <view class='msg-wrap'>
+    <image src='/image/icon/btn-m@3x.png'></image>
+  </view>
+
+</view>
+<!--head /  -->
+<!--banner  -->
+<swiper class='banner' indicator-dots='{{true}}' indicator-color='rgba(255,255,255,0.5)' indicator-active-color='#28c263' circular='{{true}}' autoplay="{{true}}">
+    <swiper-item></swiper-item>
+    <swiper-item></swiper-item>
+    <swiper-item></swiper-item>
+</swiper>
+
+<!--banner /  -->
+
+<!--nav  -->
+<view class='nav-wrap'>
+  <view class='nav-list'>
+      <view class='nav-item'>
+        <image class='nav-icon' src='/image/home_nav/nav-mgt@3x.png'></image>
+        <text class='nav-text'>妙跟团</text>
+      </view>
+      <view class='nav-item'>
+        <image class='nav-icon' src='/image/home_nav/nav-zyx@3x.png'></image>
+        <text class='nav-text'>畅自由</text>
+      </view>
+      <view class='nav-item'>
+        <image class='nav-icon' src='/image/home_nav/nav-xyl@3x.png'></image>
+        <text class='nav-text'>享邮轮</text>
+      </view>
+      <view class='nav-item'>
+        <image class='nav-icon' src='/image/home_nav/nav-yhd@3x.png'></image>
+        <text class='nav-text'>玩海岛</text>
+      </view>
+      <view class='nav-item'>
+        <image class='nav-icon' src='/image/home_nav/nav-qzyx@3x.png'></image>
+        <text class='nav-text'>亲子·游学</text>
+      </view>
+      <view class='nav-item'>
+        <image class='nav-icon' src='/image/home_nav/nav-gmy@3x.png'></image>
+        <text class='nav-text'>闺蜜游</text>
+      </view>
+      <view class='nav-item'>
+        <image class='nav-icon' src='/image/home_nav/nav-lmq@3x.png'></image>
+        <text class='nav-text'>浪漫趣</text>
+      </view>
+      <view class='nav-item'>
+        <image class='nav-icon' src='/image/home_nav/nav-pfm@3x.png'></image>
+        <text class='nav-text'>陪父母</text>
+      </view>
+  </view>
+</view>
+<!--nav / -->
+
+<!-- select address  -->
+<view class='select-wrap'>
+  <view class='price-wrap'>
+    <text class='price-item active'>￥0-￥299</text>
+    <text class='price-item'>￥0-￥299</text>
+    <text class='price-item'>￥0-￥299</text>
+    <text class='price-item'>￥0-￥299</text>
+  </view>
+  <view class='address-wrap'>
+    <scroll-view scroll-x>
+      
+    </scroll-view>
+  </view>
+</view>
+<!-- select address / -->
+
+
+
+
+
+
+
+
+
+
