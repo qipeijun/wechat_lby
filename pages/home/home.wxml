@@ -25,6 +25,7 @@
     <swiper-item></swiper-item>
     <swiper-item></swiper-item>
     <swiper-item></swiper-item>
+    <swiper-item></swiper-item>
 </swiper>
 
 <!--banner /  -->
@@ -71,18 +72,26 @@
 <!-- select address  -->
 <view class='select-wrap'>
   <view class='price-wrap'>
-    <text class='price-item active'>￥0-￥299</text>
-    <text class='price-item'>￥0-￥299</text>
-    <text class='price-item'>￥0-￥299</text>
-    <text class='price-item'>￥0-￥299</text>
+    <text class='price-item {{index==priceIndex?"active":""}}' 
+    data-index='{{index}}' bindtap='priceChange'
+    wx:for="{{testarr}}" wx:key="*this">{{item}}</text>
   </view>
   <view class='address-wrap'>
     <scroll-view scroll-x>
+      <view class='address-list' style='width:{{addressWidth}}px;'>
+
+         <text class='address-item {{index==addressIndex?"active":""}}' 
+         data-index="{{index}}" bindtap='addressChange'
+         wx:for="测试宽度.12346-+" wx:key="*this">日本{{item}}</text>
+
+      </view>
       
     </scroll-view>
   </view>
 </view>
 <!-- select address / -->
+
+<view style='height:500px'></view>
 
 
 
