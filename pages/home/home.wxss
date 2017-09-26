@@ -1,5 +1,7 @@
 /* pages/home/home.wxss */
 
+@import "/common/wxss/common.wxss";
+@import "/common/template/product-item-template/product-item-template.wxss";
 
 .head-wrap{
    box-sizing: border-box;
@@ -208,6 +210,11 @@
 }
 
 
+
+.product-list{
+  width: 100%;
+  height: auto;
+}
 
 
 

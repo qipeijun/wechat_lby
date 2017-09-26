@@ -1,6 +1,8 @@
 // pages/home/home.js
 
-var app = getApp()
+var app = getApp();
+
+const tool = require("../../common/js/public.js")
 
 Page({
 
@@ -11,7 +13,7 @@ Page({
     priceIndex:0,
     addressIndex:0,
 
-    addressWidth:1000,  // 目的地 宽度
+    addressWidth:100000,  // 目的地 宽度
 
     testarr:['￥0-￥299','￥299-￥499','￥499-￥699','￥699-￥999'],
   },
@@ -31,24 +33,16 @@ Page({
   },
   setAddressWidth(){
     var self = this;
-    wx.createSelectorQuery().selectAll('.address-list .address-item').boundingClientRect(function (rects) {
+    tool.getAllRects('.address-list .address-item').then((rects)=>{
       var width = 0;
       rects.forEach(function (rect) {
-        rect.id      // 节点的ID
-        rect.dataset // 节点的dataset
-        rect.left    // 节点的左边界坐标
-        rect.right   // 节点的右边界坐标
-        rect.top     // 节点的上边界坐标
-        rect.bottom  // 节点的下边界坐标
-        rect.width   // 节点的宽度
-        rect.height  // 节点的高度
         width += rect.width;
       })
-
       self.setData({
-        addressWidth:Math.ceil(width)
+        addressWidth: Math.ceil(width)
       })
-    }).exec()
+    })
+    
   },
   addressChange(e){
      this.setData({
@@ -65,6 +59,7 @@ Page({
    */
   onLoad: function (options) {
     // this.getBannerList()
+    console.log(tool)
   },
 
   /**
@@ -107,6 +102,9 @@ Page({
    */
   onReachBottom: function () {
   
+  },
+  onPageScroll(e){
+    
   },
 
   /**

@@ -1,0 +1,26 @@
+<template name="product-item">
+
+  <view class='product-item'>
+    <view class='img-out'>
+      <image src='/image/test.jpg'></image>
+    </view>
+    <view class='goods-msg'>
+      <view class='goods-title ellipsis'>
+        <text class='title-tag'>跟团游·香港出发</text>
+        <text class='title-text'>美国西海岸双城8-9天精华游精华游精华游精华游精华游精华游精华游</text>
+      </view>
+      <view class='goods-date'>
+        <image class='icon-rili' src='/image/icon/icon_rl-d@3x.png'></image>
+        <text class='date-text'>班期:  09/27  10/01 10/02</text>
+      </view>
+      <view class='tag-wrap'>
+        <text class='run-tag'>浪漫趣</text>
+        <text class='run-tag'>海岛</text>
+      </view>
+      <view class='price-msg'>
+        <text>￥<text class='price'>123{{index}}</text>起×12期</text>
+      </view>
+    </view>
+  </view>
+
+</template>
