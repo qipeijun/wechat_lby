@@ -7,13 +7,13 @@
    box-sizing: border-box;
     width: 100%;
     height: 88rpx;
-    background-color: rgba(40,194,99,0);
+    background-color: rgba(40,194,99,1);
     position: fixed;
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #28c263;
+    /* background: #28c263; */
 }
 .search-wrap {
     width: 594rpx;
@@ -32,7 +32,10 @@
 .search-wrap .location-wrap text{
   font-size: 26rpx;
   color: #fff;
-  line-height: 60rpx
+  line-height: 60rpx;
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
 }
 
 .search-wrap .input-wrap{

@@ -1,7 +1,7 @@
 
 function getRect(el){
   return new Promise( (resolve,reject)=>{
-    wx.createSelectorQuery().select(el).boundingClientRect(function (rect) {
+    wx.createSelectorQuery().select(el).boundingClientRect( (rect)=> {
       rect.id      // 节点的ID
       rect.dataset // 节点的dataset
       rect.left    // 节点的左边界坐标
@@ -17,7 +17,7 @@ function getRect(el){
 
 function getAllRects(el) {
   return new Promise((resolve, reject) => {
-    wx.createSelectorQuery().selectAll(el).boundingClientRect(function (rects) {
+    wx.createSelectorQuery().selectAll(el).boundingClientRect( (rects)=> {
       resolve(rects)
     }).exec()
   })

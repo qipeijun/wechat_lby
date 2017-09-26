@@ -2,7 +2,11 @@
 
 var app = getApp();
 
-const tool = require("../../common/js/public.js")
+const tool = require("../../common/js/public.js");
+
+
+var bannerHeight;
+
 
 Page({
 
@@ -10,6 +14,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    headOpacity:0,
     priceIndex:0,
     addressIndex:0,
 
@@ -59,7 +64,9 @@ Page({
    */
   onLoad: function (options) {
     // this.getBannerList()
-    console.log(tool)
+    tool.getRect(".banner").then((rect) => {
+      bannerHeight = rect.height
+    })
   },
 
   /**
@@ -104,7 +111,14 @@ Page({
   
   },
   onPageScroll(e){
-    
+    var scrollTop = e.scrollTop;
+    //set head opacity
+    if(scrollTop <= bannerHeight+44){
+      this.setData({
+        headOpacity: scrollTop / bannerHeight
+      })
+    }
+
   },
 
   /**
