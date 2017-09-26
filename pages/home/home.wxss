@@ -194,7 +194,7 @@
   font-size: 24rpx;
   border: 1rpx solid transparent;
   border-radius: 23rpx;
-  transition: all .3s linear;
+  transition: all .25s cubic-bezier(0,0,.28,.85);
 }
 .address-wrap .address-item.active{
   border-color: #28c263;
