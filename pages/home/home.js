@@ -113,11 +113,9 @@ Page({
   onPageScroll(e){
     var scrollTop = e.scrollTop;
     //set head opacity
-    if(scrollTop <= bannerHeight+44){
-      this.setData({
-        headOpacity: scrollTop / bannerHeight
-      })
-    }
+    this.setData({
+      headOpacity: scrollTop / bannerHeight
+    })
 
   },
 
