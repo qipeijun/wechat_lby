@@ -12,12 +12,19 @@
 	"projectname": "%E5%A8%81%E9%9B%A8%E9%87%91%E6%9C%8D",
 	"condition": {
 		"weapp": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "目的地",
-					"pathName": "pages/destination/destination"
+					"pathName": "pages/destination/destination",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "定制游",
+					"pathName": "pages/custom-tailor/custom-tailor",
+					"query": ""
 				}
 			]
 		},

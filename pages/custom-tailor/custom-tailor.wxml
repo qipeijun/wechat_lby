@@ -7,6 +7,7 @@
         <text class='{{0==isActive?"active":""}}' data-type='0' bindtap='changeType'>企业定制</text>
         <text class='{{1==isActive?"active":""}}' data-type='1' bindtap='changeType'>私人定制</text>
       </view>
+      <view></view>
     </view>
 </view>
 

@@ -10,3 +10,25 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+
+/*公共样式表  */
+
+.ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.globalColor {
+  background-color: rgba(40, 194, 99, 1)
+}
+
+.input {
+  color: lightgray;
+  font-size: 26rpx;
+}
+
