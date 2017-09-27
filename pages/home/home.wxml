@@ -3,11 +3,11 @@
 <import src="/common/template/product-item-template/product-item-template.wxml" />
 
 <!--head  -->
-<view class='head-wrap'>
+<view class='head-wrap' style='background-color: rgba(40,194,99,{{headOpacity}});'>
 
   <view class='search-wrap'>
     <view class='location-wrap'>
-      <text>全部</text>
+       <text>全部</text> 
     </view>
     <view class='input-wrap'>
       <view class='icon-img'>

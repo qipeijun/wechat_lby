@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    isActive:0
+  },
+  changeType(e){
+    this.setData({
+      isActive:e.currentTarget.dataset.type
+    })
   },
 
   /**

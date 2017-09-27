@@ -35,6 +35,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    baseURL:"http://www.weiyujinfu.com"
+    baseURL:"http://test.weiyujinfu.com"
   }
 })
