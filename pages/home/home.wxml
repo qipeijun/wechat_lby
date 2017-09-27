@@ -36,11 +36,11 @@
 <!--nav  -->
 <view class='nav-wrap'>
   <view class='nav-list'>
-      <view class='nav-item'>
+      <view class='nav-item' data-type='妙跟团' bindtap='go_team'>
         <image class='nav-icon' src='/image/home_nav/nav-mgt@3x.png'></image>
         <text class='nav-text'>妙跟团</text>
       </view>
-      <view class='nav-item'>
+      <view class='nav-item' data-type='畅自由' bindtap='go_team'>
         <image class='nav-icon' src='/image/home_nav/nav-zyx@3x.png'></image>
         <text class='nav-text'>畅自由</text>
       </view>

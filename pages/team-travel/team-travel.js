@@ -1,40 +1,22 @@
-// pages/custom-tailor/custom-tailor.js
-
-const tool = require("../../common/js/public.js")
-
+// pages/team-travel/team-travel.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isActive:0,
-    startTime:"",
-    timeVal:"",
+    type:"",
   },
-  changeType(e){
-    this.setData({
-      isActive:e.currentTarget.dataset.type
+  setTitle(title){
+    wx.setNavigationBarTitle({
+      title: title,
     })
   },
-  setStartTime(){
-    var time = new Date();
-    var format = tool.formatDateTime(time,"yyyy-MM-dd")
-    this.setData({
-      startTime: format
-    })
-  },
-  dateChange(e){
-    this.setData({
-      timeVal: e.detail.value
-    })
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setStartTime()
+    this.setTitle(options.type)
   },
 
   /**

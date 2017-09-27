@@ -1,0 +1,40 @@
+<!--pages/team-travel/team-travel.wxml-->
+<!-- <text>pages/team-travel/team-travel.wxml</text> -->
+
+<!--banner  -->
+<view class='banner-wrap'>
+  <swiper class='banner' indicator-dots='{{true}}' indicator-color='rgba(255,255,255,0.5)' indicator-active-color='#28c263' circular='{{true}}' autoplay="{{true}}">
+    <swiper-item></swiper-item>
+    <swiper-item></swiper-item>
+    <swiper-item></swiper-item>
+    <swiper-item></swiper-item>
+  </swiper>
+</view>
+<!--banner /  -->
+
+<!--nav  -->
+<view class='nav-wrap'>
+  <view class='nav-list'>
+    <view class='nav-item'>
+      <image src='/image/team/icon-t-oz@3x.png'></image>
+      <text>欧洲</text>
+    </view>
+  </view>
+</view>
+<!--nav /  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

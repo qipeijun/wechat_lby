@@ -22,6 +22,13 @@ Page({
 
     testarr:['￥0-￥299','￥299-￥499','￥499-￥699','￥699-￥999'],
   },
+  go_team(e){
+    console.log(e)
+    var query = e.currentTarget.dataset.type;
+    wx.navigateTo({
+      url: `../team-travel/team-travel?type=${query}`,
+    })
+  },
   getBannerList(){
     wx.request({
       url: app.globalData.baseURL+"/mvc/mobile/index/bannerList",

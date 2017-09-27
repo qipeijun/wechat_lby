@@ -5,25 +5,26 @@
     "pages/logs/logs",
     "pages/user/user",
     "pages/destination/destination",
-    "pages/custom-tailor/custom-tailor"
+    "pages/custom-tailor/custom-tailor",
+    "pages/team-travel/team-travel"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#28c263",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color":"#666666",
-    "selectedColor":"#28c263",
-    "backgroundColor":"#ffffff",
-    "borderStyle":"#d9d9d9",
+    "color": "#666666",
+    "selectedColor": "#28c263",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "#d9d9d9",
     "list": [
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath":"/image/tabBar/btn-sy@3x.png",
-        "selectedIconPath":"/image/tabBar/btn-sy-s@3x.png"
+        "iconPath": "/image/tabBar/btn-sy@3x.png",
+        "selectedIconPath": "/image/tabBar/btn-sy-s@3x.png"
       },
       {
         "pagePath": "pages/destination/destination",

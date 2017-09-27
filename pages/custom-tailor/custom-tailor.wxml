@@ -7,7 +7,108 @@
         <text class='{{0==isActive?"active":""}}' data-type='0' bindtap='changeType'>企业定制</text>
         <text class='{{1==isActive?"active":""}}' data-type='1' bindtap='changeType'>私人定制</text>
       </view>
-      <view></view>
+
+      <view class='form-group active'>
+        <view class='form-key'>
+          <text class='asterisk'>*</text>
+          <text class='key'>旅游目的地:</text>
+        </view>
+        <view class='form-val'>
+          <input placeholder='请输入旅游目的地'></input>
+        </view>
+      </view>
+
+      <view class='form-group'>
+        <view class='form-key'>
+          <text class='asterisk'>*</text>
+          <text class='key'>出游时间:</text>
+        </view>
+        <view class='form-val'>
+          <!-- <input placeholder='请输入计划出游时间'></input> -->
+          <picker class='date' mode="date" start="{{startTime}}" bindchange='dateChange'>
+            <input placeholder='请输入计划出游时间' disabled='{{true}}' value='{{timeVal}}'></input>
+          </picker>
+        </view>
+      </view>
+
+      <view class='form-group'>
+        <view class='form-key'>
+          <text class='asterisk'>*</text>
+          <text class='key'>出游人数:</text>
+        </view>
+        <view class='form-val'>
+          <input type='number' placeholder='请输入计划出游人数'></input>
+        </view>
+      </view>
+
+      <view class='form-group'>
+        <view class='form-key'>
+          <!-- <text class='asterisk'>*</text> -->
+          <text class='key'>人均预算:</text>
+        </view>
+        <view class='form-val'>
+          <input placeholder='请输入人均出游预算'></input>
+        </view>
+      </view>
+
+      <view class='line'></view>
+
+      <view class='form-group'>
+        <view class='form-key'>
+           <text class='asterisk'>*</text> 
+          <text class='key'>手机号:</text>
+        </view>
+        <view class='form-val'>
+          <input type='number' placeholder='请输入联系方式'></input>
+        </view>
+      </view>
+
+      <view class='phone-code-wrap'>
+        <view class='form-group'>
+          <view class='form-key'>
+            <text class='asterisk'>*</text> 
+            <text class='key'>验证码:</text>
+          </view>
+          <view class='form-val'>
+            <input placeholder='请输入短信验证码'></input>
+          </view>
+        </view>
+        <button class='get-phone-code-btn' hover-class='active'>获取验证码</button>
+      </view>
+        
+
+      <view class='form-group'>
+        <view class='form-key'>
+           <text class='asterisk'>*</text> 
+          <text class='key'>联系人:</text>
+        </view>
+        <view class='form-val'>
+          <input placeholder='请输入联系人姓名'></input>
+        </view>
+      </view>
+
+      <view class='form-group'>
+        <view class='form-key'>
+          <!-- <text class='asterisk'>*</text> -->
+          <text class='key'>邮箱:</text>
+        </view>
+        <view class='form-val'>
+          <input placeholder='请输入联系邮箱接收旅游方案'></input>
+        </view>
+      </view>
+
+      <view class='text-wrap'>
+        <textarea placeholder='请输入其他需求描述，如航班，酒店偏好...'></textarea>
+      </view>
+
+      <view class='point-out'>
+        <text>温馨提示：需求提交成功后，您将自动成为拎包游会员。</text>
+      </view>
+
+      <view class='btn-wrap'>
+        <button hover-class='active' loading='{{true}}'>提交</button>
+      </view>
+
     </view>
 </view>
 

@@ -1,2 +1,75 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!-- <text>pages/user/user.wxml</text> -->
+<view class='user-info-wrap'>
+  <image class='user-avatar' src="{{userInfo.avatarUrl}}"></image>
+  <text class='user-name'>昵称:{{userInfo.nickName}}</text>
+  <text class='user-account'>登陆账号:00001</text>
+</view>
+
+<!--container  -->
+
+<view class='user-list'>
+  <view class='user-item'>
+    <view class='item'>
+      <image class='icon-left' src='/image/user/1@3x.png'></image>
+      <text class='item-text'>我的资料</text>
+      <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
+    </view>
+
+    <view class='item'>
+      <image class='icon-left' src='/image/user/2@3x.png'></image>
+      <text class='item-text'>我的收藏</text>
+      <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
+    </view>
+
+    <view class='item'>
+      <image class='icon-left' src='/image/user/3@3x.png'></image>
+      <text class='item-text'>收件地址</text>
+      <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
+    </view>
+
+    <view class='item'>
+      <image class='icon-left' src='/image/user/4@3x.png'></image>
+      <text class='item-text'>常用旅客</text>
+      <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
+    </view>
+
+    <view class='item'>
+      <image class='icon-left' src='/image/user/5@3x.png'></image>
+      <text class='item-text'>我的消息</text>
+      <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
+    </view>
+  </view>
+
+  <view class='user-item group-center'>
+    <view class='item'>
+      <image class='icon-left' src='/image/user/6@3x.png'></image>
+      <text class='item-text'>我的订单</text>
+      <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
+    </view>
+
+    <view class='item'>
+      <image class='icon-left' src='/image/user/7@3x.png'></image>
+      <text class='item-text'>我的账单</text>
+      <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
+    </view>
+
+    <view class='item'>
+      <image class='icon-left' src='/image/user/8@3x.png'></image>
+      <text class='item-text'>我的旅游定制</text>
+      <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
+    </view>
+
+  </view>
+
+  <view class='user-item'>
+    <view class='item'>
+      <image class='icon-left' src='/image/user/9@3x.png'></image>
+      <text class='item-text'>设置</text>
+      <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
+    </view>
+  </view>
+
+</view>
+
+
