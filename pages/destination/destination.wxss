@@ -1,1 +1,56 @@
 /* pages/destination/destination.wxss */
+
+@import "/common/wxss/common.wxss";
+
+.navgationBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 88rpx;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.navgationBar .searchView {
+  background-color: white;
+  width: 80%;
+  height: 60rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.navgationBar .searchView .search_dropdownMenu {
+  float: left;
+  width: 200rpx;
+  height: 60rpx;
+  background-color: #24ae51;
+  border-radius: 0;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+
+.navgationBar .searchView .search_icon {
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 15rpx 8px;
+}
+
+.navgationBar .searchView .search_input {
+  height: 60rpx;
+  text-overflow: ellipsis;
+  background-color: white;
+  font-size: 26rpx;
+}
+
+.contentView {
+  position: fixed;
+  top: 88rpx;
+  right: 0;
+  left: 0;
+  bottom:0;
+  background-color: blue;
+}
+

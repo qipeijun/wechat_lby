@@ -24,19 +24,6 @@ function getAllRects(el) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 module.exports = {
   getRect,
   getAllRects

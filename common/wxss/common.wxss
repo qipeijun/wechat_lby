@@ -8,3 +8,12 @@
   text-overflow: ellipsis;
   word-wrap: break-word;
 }
+
+.globalColor {
+  background-color: rgba(40, 194, 99, 1)
+}
+
+.input {
+  color: lightgray;
+  font-size: 26rpx;
+}

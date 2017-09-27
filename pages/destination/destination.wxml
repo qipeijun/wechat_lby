@@ -1,2 +1,24 @@
 <!--pages/destination/destination.wxml-->
-<text>pages/destination/destination.wxml</text>
+
+<view class='destination_container'>
+
+<!-- 导航栏 -->
+<view class='navgationBar globalColor'>
+  <view class='searchView'>
+    <!-- 下拉菜单 -->
+    <button class='search_dropdownMenu'>全部</button>
+    <!-- 搜索图标 -->
+    <image class='search_icon' src='/image/icon/btn_ss@3x_1.png'></image>
+    <!-- input框 -->
+    <input value='' placeholder='搜索目的地/产品名称/产品编号' placeholder-class='input' class='search_input'></input>
+  </view>
+</view>
+
+<!-- conteentView -->
+<view class='contentView'> 
+  <!-- 历史记录 -->
+  <view class='histroy'>
+  </view>
+</view>
+
+</view>
