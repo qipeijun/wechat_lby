@@ -1,66 +1,42 @@
-// pages/destination/destination.js
+
+var globalLists = new Array()
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
+    histroy: ['沙盒', '解父解', '百度', '方式到翻身', '红设是非得失', '百度发顺分克莱斯勒'],
+    destinations: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+    lists: [1, 2, 3, 4, 5, 6, 7, 8]
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
+  // 点击历史记录
+  tapHistroyText: function(e) {
+    console.log('点击历史记录')
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
+  // 点击加载更多
+  clickLoadingMoreOrReduce: function(e) {
+    // 获取事件中的数据
+    globalLists = globalLists.concat(this.data.lists)
+    let flag = e.currentTarget.dataset.type
+    let destinations = []
+    if (flag === false) {
+      destinations = globalLists
+      console.log('this.data.lists' + destinations)
+    } else {
+      destinations = this.data.lists.slice(0, 4)
+    }
+    this.setData({
+      lists: destinations
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
+  // 点击destination
+  clickDestination: function(e) {
+    console.log('点击destination')
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+  // 点击destination-item
+  clickItem: function(e) {
+    console.log(e)
   }
 })

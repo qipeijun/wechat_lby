@@ -1,5 +1,7 @@
 <!--pages/destination/destination.wxml-->
 
+<import src='/common/template/destination-template/destination-template'/>
+
 <view class='destination_container'>
 
 <!-- 导航栏 -->
@@ -18,7 +20,27 @@
 <view class='contentView'> 
   <!-- 历史记录 -->
   <view class='histroy'>
+    <text class='histroy_text'>历史记录</text>
+    <view class='histroy_scroll'>
+    <!-- 滚动 -->
+      <scroll-view class='histroy_content' scroll-x='true'>
+        <text data-text='{{item}}' bindtap='tapHistroyText' class='histroy_content_text' wx:for='{{histroy}}'>{{item}}</text>
+      </scroll-view>
+    </view>
   </view>
+
+  <!-- 地点 -->
+  <view class='destination'>
+    <scroll-view class='destination_scroll' scroll-y='true'>
+      <button bindtap='clickDestination' class='destination_scroll_item' wx:for="{{destinations}}">{{item}}</button>
+    </scroll-view>
+  </view>
+
+  <!-- destination详细信息 -->
+  <view class='destination_detail'>
+    <template is='destination-item' data='{{lists}}'></template>
+  </view>
+
 </view>
 
 </view>

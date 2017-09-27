@@ -1,0 +1,22 @@
+<template name='destination-item'>
+  <scroll-view class='destination_scroll' scroll-y='true'>
+    <view class='containerView'>
+      <!-- header -->
+      <view class='headerView'>
+        <view class='header_green'></view>
+        <view class='header_content'>{{'热门目的地推荐'}}</view>
+      </view>
+      <!-- item -->
+      <view class='items'>
+        <block wx:for='{{lists}}'>
+          <view bindtap='clickItem' class="item{{index % 2 ? 'even' : 'base'}}"></view>
+        </block>
+      </view> 
+       <!-- footer -->
+      <view class='footerView'>
+        <image class='footer_image' src='/image/icon/btn-m@3x.png'></image>
+        <text bindtap='clickLoadingMoreOrReduce' class='footer_text' data-type="{{lists.length > 4 ? true : false}}">{{lists.length > 4 ? '点击收起' : '加载更多'}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</template>

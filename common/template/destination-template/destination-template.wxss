@@ -1,0 +1,64 @@
+
+.destination_detail .containerView {
+  overflow: hidden;
+}
+
+.destination_detail .containerView .headerView {
+  height: 100rpx;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20rpx;
+
+}
+
+.destination_detail .containerView .headerView .header_green {
+  height: 40rpx;
+  width: 10rpx;
+  border-radius: 5rpx;
+  background-color: green;
+}
+
+.destination_detail .containerView .headerView .header_content {
+  margin-left: 10rpx;
+  text-decoration: underline;
+}
+
+.destination_detail .containerView .items {
+  display: flex;
+  justify-content: flex-start;
+  align-items:flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.destination_detail .containerView .items .itemeven{
+  background-color: hotpink;
+  width: 44%;
+  height: 200rpx;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+
+.destination_detail .containerView .items .itembase{
+  background-color: hotpink;
+  width: 44%;
+  height: 200rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+}
+
+.destination_detail .destination_scroll {
+  height: 100%;
+}
+
+.footerView .footer_image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.footerView .footer_text {
+  font-size: 24rpx
+}
