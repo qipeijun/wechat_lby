@@ -22,6 +22,11 @@ Page({
 
     testarr:['￥0-￥299','￥299-￥499','￥499-￥699','￥699-￥999'],
   },
+  go_detail(e){
+    wx.navigateTo({
+      url: `../product-detail/product-detail`,
+    })
+  },
   go_team(e){
     console.log(e)
     var query = e.currentTarget.dataset.type;

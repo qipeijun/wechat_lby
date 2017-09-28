@@ -1,5 +1,9 @@
 /* pages/team-travel/team-travel.wxss */
 
+
+@import "/common/template/product-item-template/product-item-template.wxss";
+
+
 .banner-wrap{
   width: 100%;
   height: 431rpx;
@@ -17,6 +21,58 @@
   background-color: lightgreen
 }
 
+.search-tool-wrap{
+  width: 100%;
+  height: 83rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.search-tool{
+  height: 54rpx;
+  width: 455rpx;
+}
+.search-tool-left{
+  height: 100%;
+  width: 127rpx;
+  float: left;
+  background-color: #28c263;
+  border-radius: 8rpx 0 0 8rpx;
+  text-align: center;
+}
+.search-tool-left text{
+  font-size: 26rpx;
+  color: #fff;
+}
+.search-tool-right{
+  height: 100%;
+  width: 325rpx;
+  float: left;
+  background-color: rgba(255, 255,255, .5);
+  border-radius: 0 8rpx 8rpx 0;
+  display: flex;
+}
+.search-tool-right input{
+  /* width: 260rpx; */
+  height: 100%;
+  font-size: 26rpx;
+  color: #353535;
+}
+.search-tool-right .icon-wrap{
+  height: 100%;
+  width: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-tool-right .icon-wrap image{
+  width: 25rpx;
+  height: 25rpx;
+}
+
 
 .nav-wrap{
   width: 100%;
@@ -27,18 +83,18 @@
 .nav-list{
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  
 }
 
 .nav-item{
   width: 25%;
   height: 186rpx;
+  float: left;
 }
 .nav-item image{
   width: 100%;
-  height: 130rpx;
-  margin-bottom: 14rpx;
+  height: 87rpx;
+  margin-top: 46rpx;
 }
 .nav-item text{
   display: block;
@@ -49,11 +105,36 @@
 
 
 
+.product-list-wrap{
+  width: 100%;
+  height: auto;
+  border-top: 18rpx solid #f5f5f5;
+}
 
+.product-list-title{
+  width: 100%;
+  height: 112rpx;
+  display: flex;
+  align-items: center;
+}
+.product-list-title .xd{
+  width: 51rpx;
+  height: 40rpx;
+  margin-left: 18rpx;
+  margin-right: 10rpx;
+}
 
+.product-list-title .jx{
+  width: 46rpx;
+  height: 42rpx;
+  margin-left: 18rpx;
+  margin-right: 10rpx;
+}
 
-
-
+.product-list-title text{
+  font-size: 34rpx;
+  color: #222222;
+}
 
 
 

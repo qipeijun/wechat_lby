@@ -1,6 +1,8 @@
 <!--pages/team-travel/team-travel.wxml-->
 <!-- <text>pages/team-travel/team-travel.wxml</text> -->
 
+<import src="/common/template/product-item-template/product-item-template.wxml" />
+
 <!--banner  -->
 <view class='banner-wrap'>
   <swiper class='banner' indicator-dots='{{true}}' indicator-color='rgba(255,255,255,0.5)' indicator-active-color='#28c263' circular='{{true}}' autoplay="{{true}}">
@@ -9,21 +11,60 @@
     <swiper-item></swiper-item>
     <swiper-item></swiper-item>
   </swiper>
+
+  <view class='search-tool-wrap'>
+    <view class='search-tool'>
+      <view class="search-tool-left">
+        <text>全部</text>
+      </view>
+      <view class="search-tool-right">
+        <view class='icon-wrap'>
+          <image src='/image/team/ss-icon@3x.png'></image>
+        </view>
+        <input placeholder='目的地/关键字'></input>
+      </view>
+    </view>
+  </view>
+
 </view>
 <!--banner /  -->
 
 <!--nav  -->
 <view class='nav-wrap'>
   <view class='nav-list'>
-    <view class='nav-item'>
-      <image src='/image/team/icon-t-oz@3x.png'></image>
-      <text>欧洲</text>
+    <view class='nav-item' wx:for="{{navArr}}" wx:key="*this">
+      <image src='/image/team/{{imgType}}{{index+1}}.png'></image>
+      <text>{{item}}</text>
     </view>
   </view>
 </view>
 <!--nav /  -->
 
+<!--心动199  -->
+<view class='product-list-wrap'>
+  <view class='product-list-title'>
+    <image class='xd' src='/image/team/icon-xd-{{imgType}}@3x.png'></image>
+    <text>心动199  跟团游世界</text>
+  </view>
+  <view class='product-list'>
+    <block wx:for="{{5}}" wx:key="*this">
+      <template is="product-item" data="{{index:index}}" />
+    </block>
+  </view>
+</view>
 
+<!--精选推荐  -->
+<view class='product-list-wrap'>
+  <view class='product-list-title'>
+    <image class='jx' src='/image/team/icon-jx-{{imgType}}@3x.png'></image>
+    <text>精选推荐</text>
+  </view>
+  <view class='product-list'>
+    <block wx:for="{{5}}" wx:key="*this">
+      <template is="product-item" data="{{index:index}}" />
+    </block>
+  </view>
+</view>
 
 
 

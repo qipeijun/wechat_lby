@@ -31,6 +31,12 @@
 					"name": "个人中心",
 					"pathName": "pages/user/user",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "详情页",
+					"pathName": "pages/product-detail/product-detail",
+					"query": ""
 				}
 			]
 		},

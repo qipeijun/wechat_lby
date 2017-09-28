@@ -1,31 +1,19 @@
-// pages/team-travel/team-travel.js
+// pages/product-detail/product-detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    type:"",
-    imgType:"t",
-    navArr:["欧洲","美洲","澳洲","中东非洲","日韩","东南亚","海岛","邮轮"],
+    weekDays:new Array("日", "一", "二", "三", "四", "五", "六"),
+    lastDay:new Array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31), 
   },
-  setTitle(title){
-    wx.setNavigationBarTitle({
-      title: title,
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var imgType = "";
-    if (options.type == "妙跟团"){
-      imgType = "t"
-    } else if (options.type == "畅自由"){
-      imgType = "p"
-    }
-    this.setData({imgType})
-    this.setTitle(options.type)
+  
   },
 
   /**
