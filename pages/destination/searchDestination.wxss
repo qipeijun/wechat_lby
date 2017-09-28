@@ -1,0 +1,148 @@
+/* pages/destination/searchDestination.wxss */
+
+@import '/common/template/product-item-template/product-item-template';
+
+.navgationBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 88rpx;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.navgationBar .searchView {
+  background-color: white;
+  width: 80%;
+  height: 60rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+
+.navgationBar .searchView .search_dropdownMenu {
+  float: left;
+  width: 200rpx;
+  height: 60rpx;
+  background-color: #24ae51;
+  border-radius: 0;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+
+.navgationBar .searchView .search_icon {
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 15rpx 8px;
+}
+
+.navgationBar .searchView .search_input {
+  height: 60rpx;
+  text-overflow: ellipsis;
+  background-color: white;
+  font-size: 26rpx;
+}
+
+.contentView {
+  /* position: fixed;
+  top: 88rpx;
+  right: 0;
+  left: 0;  */
+  margin-top: 88rpx;
+}
+
+.contentView .base-condition {
+  /* overflow: hidden; */
+  height: 88rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contentView .base-condition .base-item {
+  flex: 1;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 30rpx;
+  height: 88rpx;
+}
+
+.contentView .base-condition .base-itemselect {
+  flex: 1;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  height: 88rpx;
+  color: green;
+  text-decoration: underline;
+}
+
+.contentView .separate-line {
+  height: 2rpx;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.contentView .high-search {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contentView .high-search .high-search-image {
+  height: 100rpx;
+  width: 60rpx;
+}
+
+.contentView .high-search .high-search-content {
+  font-size: 32rpx;
+}
+
+.high-search-detail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.high-search-detail .high-search-item:first-child {
+  background-color: green;
+  color: white;
+}
+
+.high-search-detail .high-search-item:nth-child(2) {
+  width: 160rpx;
+}
+
+.high-search-detail .high-search-item:nth-child(3) {
+  width: 120rpx;
+}
+
+.high-search-detail .high-search-item:nth-child(4) {
+  width: 160rpx;
+}
+
+.high-search-detail .high-search-item:nth-child(5) {
+  width: 300rpx;
+}
+
+.high-search-detail .high-search-item {
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  border-width: 2rpx;
+  border-color: green;
+  padding: 9rpx;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  margin-bottom: 10rpx;
+  border-style: solid;
+  text-align: center;
+}
+
+.high-search-list {
+  /* height: auto; */
+}

@@ -15,19 +15,26 @@ Page({
 
   // 点击加载更多
   clickLoadingMoreOrReduce: function(e) {
+
     // 获取事件中的数据
     globalLists = globalLists.concat(this.data.lists)
     let flag = e.currentTarget.dataset.type
-    let destinations = []
-    if (flag === false) {
-      destinations = globalLists
-      console.log('this.data.lists' + destinations)
-    } else {
-      destinations = this.data.lists.slice(0, 4)
+    let s = e.currentTarget.dataset.index
+
+    switch(s) {
+      case 0:
+        let destinations = []
+        if (flag === false) {
+          destinations = globalLists
+          console.log('this.data.lists' + destinations)
+        } else {
+          destinations = this.data.lists.slice(0, 4)
+        }
+        this.setData({
+          lists: destinations
+        })
+        break
     }
-    this.setData({
-      lists: destinations
-    })
   },
 
   // 点击destination
@@ -38,5 +45,13 @@ Page({
   // 点击destination-item
   clickItem: function(e) {
     console.log(e)
+  },
+
+  // 输入完成时跳转
+  inputConfirm: function(e) {
+    // 跳转页面时候用
+    wx.navigateTo({
+      url: '/pages/destination/searchDestination'
+    })
   }
 })

@@ -12,11 +12,11 @@
     <!-- 搜索图标 -->
     <image class='search_icon' src='/image/icon/btn_ss@3x_1.png'></image>
     <!-- input框 -->
-    <input value='' placeholder='搜索目的地/产品名称/产品编号' placeholder-class='input' class='search_input'></input>
+    <input bindconfirm='inputConfirm' placeholder='搜索目的地/产品名称/产品编号' placeholder-class='input' class='search_input'></input>
   </view>
 </view>
 
-<!-- conteentView -->
+<!-- contentView -->
 <view class='contentView'> 
   <!-- 历史记录 -->
   <view class='histroy'>

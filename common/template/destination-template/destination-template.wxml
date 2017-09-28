@@ -1,6 +1,7 @@
-<template name='destination-item'>
-  <scroll-view class='destination_scroll' scroll-y='true'>
-    <view class='containerView'>
+
+
+<template name='destination-section'>
+  <view class='containerView'>
       <!-- header -->
       <view class='headerView'>
         <view class='header_green'></view>
@@ -15,8 +16,18 @@
        <!-- footer -->
       <view class='footerView'>
         <image class='footer_image' src='/image/icon/btn-m@3x.png'></image>
-        <text bindtap='clickLoadingMoreOrReduce' class='footer_text' data-type="{{lists.length > 4 ? true : false}}">{{lists.length > 4 ? '点击收起' : '加载更多'}}</text>
+        <text bindtap='clickLoadingMoreOrReduce' class='footer_text' data-index='{{index}}' data-type="{{lists.length > 4 ? true : false}}">{{lists.length > 4 ? '点击收起' : '加载更多'}}</text>
       </view>
     </view>
+</template>
+
+
+<template name='destination-item'>
+  <scroll-view class='destination_scroll' scroll-y='true'>
+    <block wx:for='{{[1,2]}}'>
+      <template is='destination-section' data='{{lists: lists, index}}'></template>
+    </block>
+    <!-- <template is='destination-section' data='{{lists}}'></template> -->
   </scroll-view>
 </template>
+

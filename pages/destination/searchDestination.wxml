@@ -1,0 +1,52 @@
+<!--pages/destination/searchDestination.wxml-->
+
+<import src='/common/template/product-item-template/product-item-template'/>
+
+<view class='searchDestination_container'>
+  <!-- 导航栏 -->
+  <view class='navgationBar globalColor'>
+    <view class='searchView'>
+      <!-- 下拉菜单 -->
+      <button class='search_dropdownMenu'>全部</button>
+      <!-- 搜索图标 -->
+      <image class='search_icon' src='/image/icon/btn_ss@3x_1.png'></image>
+      <!-- input框 -->
+      <input bindconfirm='inputConfirm' placeholder='搜索目的地/产品名称/产品编号' placeholder-class='input' class='search_input'></input>
+    </view>
+  </view>
+
+  <!-- contentView -->
+  <view class='contentView'>
+    <!-- 基础搜索内容 -->
+    <view class='base-condition'>
+      <block wx:for="{{['全部','跟团游','自由行']}}">
+        <text bindtap='clickItem' data-type='{{index}}' class="base-item{{index==selectIndex?'select':''}}">{{item}}</text>
+      </block>
+    </view>
+    <!-- 分割线 -->
+    <view class='separate-line'></view>
+    <!-- 高级搜索 -->
+    <view class='high-search'>
+      <image class='high-search-image' src=''></image>
+      <text class='high-search-content'>高级筛选</text>
+    </view>
+    <!-- 分割线 -->
+    <view class='separate-line'></view>
+    <!-- 高级搜索 -->
+    <view class='high-search-detail'>
+      <block wx:for="{{['综合排序', '价格', '天数', '适宜人数', '玩法推荐']}}">
+        <picker range="{{['综合排序', '价格', '天数', '适宜人数', '玩法推荐']}}" class='high-search-item'>{{item}}</picker>
+      </block>
+    </view>
+    <!-- 搜索结果 -->
+    <view class='high-search-list'>
+      <scroll-view scroll-y='true'>
+        <block wx:for='{{[1,2,3,4,5]}}'>
+          <template is='product-item'></template>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>
+
+

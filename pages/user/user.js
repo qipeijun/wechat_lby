@@ -11,6 +11,7 @@ Page({
     userInfo:{},
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
+  
   getAvatar(){
     if (app.globalData.userInfo) {
       this.setData({

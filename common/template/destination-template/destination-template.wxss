@@ -14,7 +14,7 @@
 }
 
 .destination_detail .containerView .headerView .header_green {
-  height: 40rpx;
+  height: 32rpx;
   width: 10rpx;
   border-radius: 5rpx;
   background-color: green;
@@ -23,6 +23,7 @@
 .destination_detail .containerView .headerView .header_content {
   margin-left: 10rpx;
   text-decoration: underline;
+  font-size: 32rpx;
 }
 
 .destination_detail .containerView .items {
