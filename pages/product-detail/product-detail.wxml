@@ -1,0 +1,22 @@
+<!--pages/product-detail/product-detail.wxml-->
+<!-- <text>pages/product-detail/product-detail.wxml</text> -->
+
+
+<!--日历组件  -->
+<view class='calendar'>
+  <view class='week-wrap'>
+    <view class='week' wx:for="{{weekDays}}" wx:key="*this">
+      <text>{{item}}</text>
+    </view>
+  </view>
+  <view class='calendar-list'>
+    <view class='calendar-item' wx:for="{{42}}" wx:key="*this">
+      <text>{{item+1}}</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+

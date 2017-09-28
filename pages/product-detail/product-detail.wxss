@@ -1,0 +1,67 @@
+/* pages/product-detail/product-detail.wxss */
+
+
+
+
+
+
+
+
+
+
+/*日历组件  */
+.calendar{
+  width: 100%;
+  height: 500rpx;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .2)
+}
+
+.week-wrap{
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  align-items: center;
+}
+.week-wrap .week{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.week-wrap .week:first-child,.week-wrap .week:last-child{
+  color: #28c263;
+}
+
+.calendar-list{
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar-list .calendar-item{
+  width: 14.285%;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

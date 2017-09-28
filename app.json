@@ -6,7 +6,8 @@
     "pages/user/user",
     "pages/destination/destination",
     "pages/custom-tailor/custom-tailor",
-    "pages/team-travel/team-travel"
+    "pages/team-travel/team-travel",
+    "pages/product-detail/product-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

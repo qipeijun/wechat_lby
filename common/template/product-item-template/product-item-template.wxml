@@ -1,6 +1,6 @@
 <template name="product-item">
 
-  <view class='product-item'>
+  <view class='product-item' bindtap='go_detail'>
     <view class='img-out'>
       <image src='/image/test.jpg'></image>
     </view>
