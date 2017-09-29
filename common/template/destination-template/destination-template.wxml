@@ -9,7 +9,7 @@
       </view>
       <!-- item -->
       <view class='items'>
-        <block wx:for='{{lists}}'>
+        <block wx:for='{{lists}}' wx:key='*this'>
           <view bindtap='clickItem' class="item{{index % 2 ? 'even' : 'base'}}"></view>
         </block>
       </view> 
@@ -24,7 +24,7 @@
 
 <template name='destination-item'>
   <scroll-view class='destination_scroll' scroll-y='true'>
-    <block wx:for='{{[1,2]}}'>
+    <block wx:for='{{[1,2]}}' wx:key='*this'>
       <template is='destination-section' data='{{lists: lists, index}}'></template>
     </block>
     <!-- <template is='destination-section' data='{{lists}}'></template> -->

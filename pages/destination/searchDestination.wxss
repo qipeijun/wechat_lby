@@ -142,7 +142,3 @@
   border-style: solid;
   text-align: center;
 }
-
-.high-search-list {
-  /* height: auto; */
-}

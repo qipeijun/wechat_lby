@@ -24,7 +24,7 @@
     <view class='histroy_scroll'>
     <!-- 滚动 -->
       <scroll-view class='histroy_content' scroll-x='true'>
-        <text data-text='{{item}}' bindtap='tapHistroyText' class='histroy_content_text' wx:for='{{histroy}}'>{{item}}</text>
+        <text data-text='{{item}}' bindtap='tapHistroyText' class='histroy_content_text' wx:for='{{histroy}}' wx:key='*this'>{{item}}</text>
       </scroll-view>
     </view>
   </view>
@@ -32,7 +32,7 @@
   <!-- 地点 -->
   <view class='destination'>
     <scroll-view class='destination_scroll' scroll-y='true'>
-      <button bindtap='clickDestination' class='destination_scroll_item' wx:for="{{destinations}}">{{item}}</button>
+      <button bindtap='clickDestination' class='destination_scroll_item' wx:for="{{destinations}}" wx:key='*this'>{{item}}</button>
     </scroll-view>
   </view>
 

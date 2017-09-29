@@ -42,7 +42,7 @@
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  padding-left: 25rpx;
+  padding-left: 0;
   background-color: #fff;
 }
 .user-item .item{
@@ -60,8 +60,9 @@
 .user-item .item .icon-left{
   width: 37rpx;
   height: 37rpx;
+
   margin-right: 28rpx;
-  margin-left:6rpx; 
+  margin-left:32rpx; 
   display: inline-block;
   vertical-align: middle;
   line-height: 84rpx;

@@ -8,7 +8,10 @@
     "pages/custom-tailor/custom-tailor",
     "pages/team-travel/team-travel",
     "pages/destination/searchDestination",
-    "pages/product-detail/product-detail"
+    "pages/product-detail/product-detail",
+    "pages/user/info",
+    "pages/user/address",
+    "pages/user/addAddress"
   ],
   "window": {
     "backgroundTextStyle": "light",

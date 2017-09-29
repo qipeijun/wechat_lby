@@ -1,0 +1,39 @@
+<!--pages/user/info.wxml-->
+<view class='info-container'>
+  <view class='content'>
+  <!-- 姓名 -->
+    <view class='info' hover-class='hover'>
+      <text class='info-title'>姓名</text>
+      <text class='info-detailTitle'>汤强</text>
+    </view>
+    <view class='info' hover-class='hover'>
+      <text class='info-title'>手机号码</text>
+      <text class='info-detailTitle'>15768148813</text>
+    </view>
+    <view class='info' hover-class='hover'>
+      <label>
+        <text class='info-title'>性别</text>
+        <image class='info-icon' src='/image/user/icon-jiantou@3x.png'></image>
+        <picker bindchange='selectGender' mode = 'selector' value='0' class='info-detailTitle' range="{{['男','女']}}">{{selectGender}}</picker>
+      </label>
+    </view>
+    <view class='info' hover-class='hover'>
+      <text class='info-title'>出生年月日</text>
+      <image class='info-icon' src='/image/user/icon-jiantou@3x.png'></image>
+      <picker bindchange='selectBirthday' value='0' class='info-detailTitle' mode='date'>{{selectBirthday}}</picker>
+    </view>
+    <view class='info' hover-class='hover'>
+      <text class='info-title'>邮箱</text>
+      <input placeholder='请输入邮箱' placeholder-class='info-input' class='info-detailTitle' ></input>
+    </view>
+    <view class='info'>
+      <text class='info-title'>护照号</text>
+      <input placeholder='请输入护照号' placeholder-class='info-input' class='info-detailTitle' ></input>
+    </view>
+    <view class='info'>
+      <text class='info-title'>护照有效期</text>
+      <image class='info-icon' src='/image/user/icon-jiantou@3x.png'></image>
+      <picker bindchange='selectDateOfExpiration' value='0' class='info-detailTitle' mode='date'>{{selectDateOfExpiration}}</picker>
+    </view>
+  </view>
+</view>

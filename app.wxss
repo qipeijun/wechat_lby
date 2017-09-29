@@ -1,6 +1,5 @@
 /**app.wxss**/
 
-
 .container {
   height: 100%;
   display: flex;
@@ -30,5 +29,9 @@
 .input {
   color: lightgray;
   font-size: 26rpx;
+}
+
+.hover {
+  background-color: rgba(197, 197, 197, 0.7)
 }
 

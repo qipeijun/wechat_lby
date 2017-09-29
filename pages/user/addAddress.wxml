@@ -1,0 +1,33 @@
+<!--pages/user/addAddress.wxml-->
+
+<view class='addAddress_container'>
+<!-- 姓名 -->
+  <view class='addAddress_item'>
+    <text class='item_title'>姓名</text>
+    <input placeholder='拼音或英文' placeholder-class='item_detailTitle_placeholder' class='item_detailTitle'></input>
+  </view>
+
+  <!-- 手机号码 -->
+  <view class='addAddress_item'>
+    <text class='item_title'>手机号码</text>
+    <input placeholder='请输入手机号码' placeholder-class='item_detailTitle_placeholder' class='item_detailTitle'></input>
+  </view>
+
+  <!-- 邮箱 -->
+  <view class='addAddress_item'>
+    <text class='item_title'>邮箱</text>
+    <input placeholder='请输入邮箱地址' placeholder-class='item_detailTitle_placeholder' class='item_detailTitle'></input>
+  </view>
+
+  <!-- 所在地区 -->
+  <view class='addAddress_item'>
+    <text class='item_title'>所在地区</text>
+    <image class='info-icon' src='/image/user/icon-jiantou@3x.png'></image>
+    <picker bindchange='selectRegion' class='item_detailTitle' mode='region'>{{selectRegion}}</picker>
+  </view>
+
+    <!-- 详细地址 -->
+  <view class='addAddress_item'>
+    <input placeholder='请输入详细地址' placeholder-class='item_detailTitle_placeholder' class='item_detailTitle'></input>
+  </view>
+</view>

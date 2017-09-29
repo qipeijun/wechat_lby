@@ -1,0 +1,13 @@
+<!--pages/user/address.wxml-->
+<view class='address_container'>
+  <!-- 地址列表 -->
+  <view class='address_list'>
+    <block wx:for='{{[1,2]}}' wx:key='*this'>
+      <view class='address_item'></view>
+    </block>
+  </view>
+  <!-- 添加地址 -->
+  <navigator url='addAddress' class='address_nav'>
+    <view class='address_add' hover-class='hover'>+添加地址</view>
+  </navigator>
+</view>

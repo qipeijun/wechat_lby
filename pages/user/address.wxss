@@ -1,0 +1,36 @@
+/* pages/user/address.wxss */
+
+page {
+  background-color: rgba(197, 197, 197, 0.7)
+}
+
+
+.address_container .address_nav .address_add {
+  display: block;
+  color: green;
+  width: 100%;
+  height: 88rpx;
+  margin-top: 40rpx;
+  background-color: white;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  padding-left: 32rpx;
+}
+
+.address_container .address_list .address_item {
+  display: block;
+  color: green;
+  width: 100%;
+  height: 88rpx;
+  background-color: white;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  padding-left: 32rpx;
+  border-bottom-width: 1rpx;
+  border-bottom-color: rgba(197, 197, 197, 0.7);
+  border-bottom-style: solid;
+}
+
+.address_container .address_list .address_item:first-child {
+  margin-top: 40rpx;
+}

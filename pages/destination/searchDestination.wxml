@@ -19,7 +19,7 @@
   <view class='contentView'>
     <!-- 基础搜索内容 -->
     <view class='base-condition'>
-      <block wx:for="{{['全部','跟团游','自由行']}}">
+      <block wx:for="{{['全部','跟团游','自由行']}}" wx:key='*this'>
         <text bindtap='clickItem' data-type='{{index}}' class="base-item{{index==selectIndex?'select':''}}">{{item}}</text>
       </block>
     </view>
@@ -27,21 +27,21 @@
     <view class='separate-line'></view>
     <!-- 高级搜索 -->
     <view class='high-search'>
-      <image class='high-search-image' src=''></image>
+      <image class='high-search-image'></image>
       <text class='high-search-content'>高级筛选</text>
     </view>
     <!-- 分割线 -->
     <view class='separate-line'></view>
     <!-- 高级搜索 -->
     <view class='high-search-detail'>
-      <block wx:for="{{['综合排序', '价格', '天数', '适宜人数', '玩法推荐']}}">
-        <picker range="{{['综合排序', '价格', '天数', '适宜人数', '玩法推荐']}}" class='high-search-item'>{{item}}</picker>
+      <block wx:for="{{['综合排序', '价格', '天数', '适宜人数', '玩法推荐']}}" wx:key='*this'>
+        <picker range="{{['综合排序', '价格', '天数', '适宜人数', '玩法推荐']}}" wx:key='*this' class='high-search-item'>{{item}}</picker>
       </block>
     </view>
     <!-- 搜索结果 -->
     <view class='high-search-list'>
       <scroll-view scroll-y='true'>
-        <block wx:for='{{[1,2,3,4,5]}}'>
+        <block wx:for='{{[1,2,3,4,5]}}' wx:key='*this'>
           <template is='product-item'></template>
         </block>
       </scroll-view>
