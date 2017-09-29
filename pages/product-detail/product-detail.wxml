@@ -3,7 +3,7 @@
 
 
 <!--日历组件  -->
-<view class='calendar'>
+<!-- <view class='calendar'>
   <view class='week-wrap'>
     <view class='week' wx:for="{{weekDays}}" wx:key="*this">
       <text>{{item}}</text>
@@ -14,9 +14,37 @@
       <text>{{item+1}}</text>
     </view>
   </view>
+</view> -->
+
+<view class="calendar">
+  <view class="calendar-header">
+    <!-- <image src="/images/date-left.png" bindtap="bindLastMonth"/> -->
+    <text bindtap="bindLastMonth">上一个月</text>
+    <picker value="{{date}}"
+          bindchange="bindPickerChange"
+          fields="month"
+          mode="date"
+          start="1990-01-01"
+          end="2020-12-31">
+      <view class="picker">{{dateCN}}</view>
+    </picker>
+    <!-- <image src="/images/date-right.png" bindtap="bindNextMonth"/> -->
+    <text  bindtap="bindNextMonth">下一个月</text>
+  </view>
+
+  <view class="week">
+    <view wx:for="{{week}}" wx:key="{{item}}" class="week-item">
+      <text>{{item}}</text>
+    </view>
+  </view>
+
+  <view class="month">
+    <view wx:for="{{months}}" wx:key="{{item}}" class="month-item" data-item="{{item}}" bindtap="click">
+        <text>{{item.num}}</text>
+    </view>
+  </view>
+
 </view>
-
-
 
 
 

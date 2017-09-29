@@ -98,7 +98,7 @@
       </view>
 
       <view class='text-wrap'>
-        <textarea placeholder='请输入其他需求描述，如航班，酒店偏好...'></textarea>
+        <textarea auto-height='{{true}}' placeholder='请输入其他需求描述，如航班，酒店偏好...'></textarea>
       </view>
 
       <view class='point-out'>

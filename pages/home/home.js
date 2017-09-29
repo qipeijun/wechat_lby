@@ -2,8 +2,9 @@
 
 var app = getApp();
 
-const tool = require("../../common/js/public.js");
+// const tool = require("../../common/js/public.js");
 
+import { getAllRects, getRect } from "../../common/js/public.js"
 
 var bannerHeight;
 
@@ -50,7 +51,7 @@ Page({
   },
   setAddressWidth(){
     var self = this;
-    tool.getAllRects('.address-list .address-item').then((rects)=>{
+    getAllRects('.address-list .address-item').then((rects)=>{
       var width = 0;
       rects.forEach(function (rect) {
         width += rect.width;
@@ -76,7 +77,7 @@ Page({
    */
   onLoad: function (options) {
     // this.getBannerList()
-    tool.getRect(".banner").then((rect) => {
+    getRect(".banner").then((rect) => {
       bannerHeight = rect.height
     })
   },

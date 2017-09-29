@@ -1,6 +1,8 @@
 // pages/custom-tailor/custom-tailor.js
 
-const tool = require("../../common/js/public.js")
+// const tool = require("../../common/js/public.js")
+
+import { formatDateTime } from "../../common/js/public.js"
 
 Page({
 
@@ -19,7 +21,7 @@ Page({
   },
   setStartTime(){
     var time = new Date();
-    var format = tool.formatDateTime(time,"yyyy-MM-dd")
+    var format = formatDateTime(time,"yyyy-MM-dd")
     this.setData({
       startTime: format
     })
