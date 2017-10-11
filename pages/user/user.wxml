@@ -30,11 +30,11 @@
       <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
     </navigator>
 
-    <view class='item' hover-class='hover'>
+    <navigator url='traveller' class='item' hover-class='hover'>
       <image class='icon-left' src='/image/user/4@3x.png'></image>
       <text class='item-text'>常用旅客</text>
       <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>
-    </view>
+    </navigator>
 
     <view class='item' hover-class='hover'>
       <image class='icon-left' src='/image/user/5@3x.png'></image>
@@ -64,8 +64,8 @@
 
   </view>
 
-  <view class='user-item' hover-class='hover'>
-    <view class='item'>
+  <view class='user-item'>
+    <view class='item' hover-class='hover'>
       <image class='icon-left' src='/image/user/9@3x.png'></image>
       <text class='item-text'>设置</text>
       <image class='icon-right' src='/image/user/icon-jiantou@3x.png'></image>

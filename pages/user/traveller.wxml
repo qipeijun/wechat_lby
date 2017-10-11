@@ -1,0 +1,11 @@
+<!--pages/user/traveller.wxml-->
+<view class='traveller_container'>
+<!-- 旅客列表 -->
+  <view class='traveller_list'>
+
+  </view>
+<!-- 添加旅客 -->
+  <view class='traveller_add'>
+    <text class='traveller_add_text'>新增常用旅客</text>
+  </view>
+</view>

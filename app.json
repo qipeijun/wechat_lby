@@ -11,7 +11,8 @@
     "pages/product-detail/product-detail",
     "pages/user/info",
     "pages/user/address",
-    "pages/user/addAddress"
+    "pages/user/addAddress",
+    "pages/user/traveller"
   ],
   "window": {
     "backgroundTextStyle": "light",

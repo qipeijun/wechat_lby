@@ -1,0 +1,21 @@
+/* pages/user/traveller.wxss */
+.traveller_container {
+
+}
+
+.traveller_container .traveller_list {
+
+}
+
+.traveller_container .traveller_add .traveller_add_text {
+  display: block;
+	margin-top: 80rpx;
+	font-size: 32rpx;
+	width: 100%;
+	height: auto;
+  text-align:center;
+}
+
+.traveller_container .traveller_add .traveller_add_text:before {
+  content: url('image/team/icon-xd-t@3x.png');
+}
